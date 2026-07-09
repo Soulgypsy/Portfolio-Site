@@ -1,0 +1,185 @@
+/* page formatting */
+body {
+  margin: 0;
+  padding: 30px 24px 40px;
+  background: #f4f7ff;
+  color: #1f2a44;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* applies the transition to all text within the body since otherwise it doesn't seem to work, would like feedback on this thanks */
+body, body * {
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* section formatting to make it look nicer and organised */
+section {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 24px;
+}
+
+/* formatting for all headers just to look nicer and more uniform */
+h1, h2, h3, h4 {
+  margin-top: 0;
+  color: #14213d;
+}
+
+/* footer formatting to keep it small*/
+footer {
+  margin-top: 30px;
+  padding: 16px 10px;
+  font-size: 13px;
+  text-align: center;
+  color: #5b6b8a;
+}
+
+/* ideally works to keep images good for mobile */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* just keeps the smooth transition when clicking the view my work button */
+html {
+  scroll-behavior: smooth;
+}
+
+/* fixed button in the corener of the page to toggle dark mode */
+#darkModeButton {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  padding: 10px 18px;
+  background: linear-gradient(to bottom, #4f46e5, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
+}
+
+/* dark mode values */
+.dark-mode {
+  transition: background 0.5s ease, color 0.5s ease;
+  background: #101a2c;
+  color: #f4f7ff;
+}
+
+/* each applies this to the different text elements */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode p,
+.dark-mode a {
+  color: #f4f7ff;
+}
+
+/* dark mode for the cards and contact form */
+.dark-mode .card {
+  background: #1a1f2e;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+.dark-mode .contact-form {
+  background: #1a1f2e;
+  border: 1px solid #2c2f3a;
+}
+
+/* design formatting for cards */
+.card {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  max-width: 300px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px auto;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* little effect when you hover over the cards */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.16);
+}
+
+/* just keeping the text far from the edge of the box */
+.container {
+  padding: 16px 18px;
+}
+
+/* formatting for the skills section since the cards are in a row */
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* actual row formatting for the cards */
+.cards-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* contact section formatting */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* puts the form itself in a box to keep it eye catching and also seperate from the links */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #dbe6ff;
+  background: rgba(255, 255, 255, 0.75);
+  width: min(90%, 420px);
+  padding: 24px;
+  margin: 10px auto 0;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+/* actual formatting for the input areas as well */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0 14px;
+  border: 1px solid #cdd8f5;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* colouring for the form */
+.contact-form input[type="submit"] {
+  background: linear-gradient(to bottom, #4f46e5, #2563eb);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* general button colouring and formatting*/
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  background: linear-gradient(to bottom, #4f46e5, #2563eb);
+  color: white;
+  cursor: pointer;
+}

@@ -1,30 +1,40 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <section>
+  <section id="intro">
   <h1>HELLO!</h1>
 
   <button id="darkModeButton" onclick="darkModeFunction()">Toggle Dark Mode</button>
 <h2>Welcome to my portfolio!</h2>
 
-<img src="images/fuckass drawing.png" alt="Profile Picture" width="200" height="200">
+<img src="images/profile.png" alt="Profile Picture" width="200" height="200">
 
 <h3>My name is Jack Bates, aspiring game and software developer.</h3>
 
 <p>Here you will find a collection of my work, including projects, games, and software applications that I have developed. Feel free to explore and learn more about my skills and experience.</p>
 
   <button onclick="document.getElementById('work').scrollIntoView();">View My Work</button>
+  <button onclick="document.getElementById('contact').scrollIntoView();">Or Contact Me</button>
     </section>
 
 <section id="about">
 
   <h1>About Me</h1>
-  </section>
+  <p><strong>Hi, my name is Jack.</strong></p>
+  <p>I'm a game developer with a passion for creativity and pushing my skills. Learning more every project is what keeps me motivated to develop in projects, and seeing what I'm able to achieve is a good reward for anyone, much less sharing it with others. This is what this site is for: to show off my works!</p>
+  
+  <p><strong>What I'm Passionate About</strong></p>
+  <p>Games are interesting to me, and it's no more apparent than the fact that I'm learning to develop more every day. Ever since I was young and able to actually grab things I've been playing games, and my passion always stays burning, even during harsher times.</p>
+
+  <p><strong>My Goals</strong></p>
+  <p>My goals are to become a game developer, and to work in the industry. It's been a dream of mine since I was able to think more on my career goals, though I'm not limiting myself to only that as a career goal. I'm also 0pen to anything in general to do with front end development. </p>
+</section>
 
   <section id="skills">
 
@@ -54,6 +64,68 @@
 <section id="work" class="work">
 
   <h1>My Projects</h1>
+
+  <div>
+    <img src="images/puffy.png" alt="Puffy" width="600" height="300">
+    <h3>Puffy McPuffer's Grand Canal Adventure</h3>
+    <p>This was my IP3 group project, Puffy McPuffer's Grand Canal Adventure, and my most fleshed out game thanks to having an entire year to work on it. As I was a part of the team, I can mention what I worked on in particular:</p>
+
+
+    <ul>
+      <li>The entire racing level within it was my creation.</li>
+      <li>The movement system was mine which took a lot of refining to get a proper boat feeling.</li>
+      <li>The entire quest level was also mine, as well as the UI elements involving quests.</li>
+    </ul>
+
+    <button onclick="window.open('https://gcugames.itch.io/puffy-mcpuffers-grand-canal-adventure', '_blank')">TRY THE GAME HERE!</button>
+  </div>
+
+  <div>
+    <img src="images/vision.png" alt="Vision" width="600" height="300">
+    <h3>Vision</h3>
+    <p>This was my previous group project at Uni, Vision, a game based on the concept of screen cheating in the days when split screen was the norm for multiplayer. As we were still learning, it's less fleshed out than what it could be, but the markers loved the concept of the game even if it needed a bit of work to be fully realised. I largely made:</p>
+​
+    
+    <ul>
+      <li>The movement system along with the hidden players for each camera.</li>
+      <li>The attack the ghosts have to stun the hunter.</li>
+      <li>The center square for ghosts to bring what they need to win.</li>
+      <li>Other small things like audio and the like.</li>
+    </ul>
+
+    <button onclick="window.open('https://github.com/Soulgypsy/Vision', '_blank')">TRY THE GAME HERE!</button>
+  </div>
+  <div>
+
+    <img src="images/monkey.png" alt="Monkey" width="600" height="300">
+    <h3>Graphics in C++</h3>
+    <p>This was my first try at C++, as well as graphical development in the code itself, my GraPro Coursework. It's little more than a tech demo, but it does show my learning at the code base, and what could potentially come of it. This largely helped me to learn about:</p>
+
+    <ul>
+      <li>Importing models from a folder in code, basic, but important.</li>
+      <li>Applying textures to different model meshes as well as effects like water.</li>
+      <li>Understanding more of C++ to a fundamental level.</li>
+      <li>Basic movement momentum and physics in C++.</li>
+    </ul>
+
+    <button onclick="window.open('https://github.com/Soulgypsy/GraPro-Coursework', '_blank')">TRY THE SOFTWARE HERE!</button>
+
+  </div>
+
+  <div>
+    <img src="images/box.png" alt="Box" width="600" height="300">
+    <h3>Incremental Box Game</h3>
+    <p>This is my portfolio piece for 2025's module submission, a proof-of-concept/demo of a game similar to A Game About Digging A Hole on Steam, which I've just called Generic Box Breaker Game. The core gameplay loop is breaking boxes to earn money, and spending that money to increase your efficiency, a classic clicker/idle game staple brought to a more interactive medium. This taught me more about:</p>
+
+    <ul>
+      <li>Fracturing models. This was the core part of this project that took the most time to figure out.</li>
+      <li>Making different systems work well together to make a tight, if first drafty, gameplay loop.</li>
+      <li>Understanding particle effects a little better. I could still learn more,  but they have proven to be more understandable to me.</li>
+      <li>Stat manipulation mid game.</li>
+    </ul>
+
+    <button onclick="window.open('https://github.com/Soulgypsy/Generic-Box-Breaker-Game', '_blank')">TRY THE GAME HERE!</button>
+  </div>
 </section>
 
 <section id="achievements">

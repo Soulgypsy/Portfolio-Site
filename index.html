@@ -33,7 +33,7 @@
   <p>Games are interesting to me, and it's no more apparent than the fact that I'm learning to develop more every day. Ever since I was young and able to actually grab things I've been playing games, and my passion always stays burning, even during harsher times.</p>
 
   <p><strong>My Goals</strong></p>
-  <p>My goals are to become a game developer, and to work in the industry. It's been a dream of mine since I was able to think more on my career goals, though I'm not limiting myself to only that as a career goal. I'm also 0pen to anything in general to do with front end development. </p>
+  <p>My goals are to become a game developer, and to work in the industry. It's been a dream of mine since I was able to think more on my career goals, though I'm not limiting myself to only that as a career goal. I'm also open to anything in general to do with front end development. </p>
 </section>
 
   <section id="skills">
@@ -43,18 +43,42 @@
   <div class="cards-row">
 
     <div class="card">
-      <img src="images/fuckass drawing.png" alt="Avatar" width="auto">
+      <img src="images/code.png" alt="code" width="30%">
       <div class="container">
-        <h4><b>John Doe</b></h4>
-        <p>Architect & Engineer</p>
+        <h4><b>C#</b></h4>
+        <p>My earliest programming language I sunk time into, it's the one I know the most about. It's simple, but reliable for front end or game development without getting too far into the weeds of things like memory management. You don't have as much control, but you can get a lot done with it.</p>
       </div>
     </div>
 
     <div class="card">
-      <img src="images/fuckass drawing.png" alt="Avatar" width="auto">
+      <img src="images/HTML.png" alt="Avatar" width="40%">
       <div class="container">
-        <h4><b>Jane Doe</b></h4>
-        <p>Architect & Engineer</p>
+        <h4><b>HTML</b></h4>
+        <p>I am still learning this language, so I am hardly proficient yet, but I made this site using it and it's a well functioning one. I have a couple years of experience with it, but I haven't properly touched it for a good couple years until recently. Though it does come back to you, I'm still a little rusty.</p>
+      </div>
+    </div>
+
+        <div class="card">
+      <img src="images/VSCode.png" alt="Avatar" width="40%">
+      <div class="container">
+        <h4><b>VS Code</b></h4>
+        <p>I have been using different versions of this program for years, whether the yearly releases or most recently the Studio Code release. It's proven very helpful in optimising the efficieny of development in cutting down of repetitive tasks.</p>
+      </div>
+    </div>
+
+        <div class="card">
+      <img src="images/github.png" alt="Avatar" width="40%">
+      <div class="container">
+        <h4><b>GitHub</b></h4>
+        <p>I have used this as long as I've been developing. It's a good platform to upload all my projects on to, and is a good place to work together with other contributors on a team project, or a public repository.</p>
+      </div>
+    </div>
+
+        <div class="card">
+      <img src="images/peopleskills.png" alt="Avatar" width="40%">
+      <div class="container">
+        <h4><b>Communication</b></h4>
+        <p>I always enjoy talking with others in and out of work. This is more of a soft skill, yes, but it is essential for team building and getting along with everyone even if you don't see eye to eye in a professional environment. You don't have to like each other, but you have to be civil.</p>
       </div>
     </div>
 
@@ -65,7 +89,7 @@
 
   <h1>My Projects</h1>
 
-  <div>
+  <div class="card-column">
     <img src="images/puffy.png" alt="Puffy" width="100%">
     <h3>Puffy McPuffer's Grand Canal Adventure</h3>
     <p>This was my IP3 group project, Puffy McPuffer's Grand Canal Adventure, and my most fleshed out game thanks to having an entire year to work on it. As I was a part of the team, I can mention what I worked on in particular:</p>
@@ -80,8 +104,8 @@
     <button onclick="window.open('https://gcugames.itch.io/puffy-mcpuffers-grand-canal-adventure', '_blank')">TRY THE GAME HERE!</button>
   </div>
 
-  <div>
-    <img src="images/vision.png" alt="Vision" width="100%">
+  <div class="card-column">
+    <img src="images/vision.png" alt="Vision" width="40%">
     <h3>Vision</h3>
     <p>This was my previous group project at Uni, Vision, a game based on the concept of screen cheating in the days when split screen was the norm for multiplayer. As we were still learning, it's less fleshed out than what it could be, but the markers loved the concept of the game even if it needed a bit of work to be fully realised. I largely made:</p>
 ​
@@ -95,7 +119,7 @@
 
     <button onclick="window.open('https://github.com/Soulgypsy/Vision', '_blank')">TRY THE GAME HERE!</button>
   </div>
-  <div>
+  <div class="card-column">
 
     <img src="images/monkey.png" alt="Monkey" width="100%">
     <h3>Graphics in C++</h3>
@@ -112,7 +136,7 @@
 
   </div>
 
-  <div>
+  <div class="card-column">
     <img src="images/box.png" alt="Box Game" width="100%">
     <h3>Incremental Box Game</h3>
     <p>This is my portfolio piece for 2025's module submission, a proof-of-concept/demo of a game similar to A Game About Digging A Hole on Steam, which I've just called Generic Box Breaker Game. The core gameplay loop is breaking boxes to earn money, and spending that money to increase your efficiency, a classic clicker/idle game staple brought to a more interactive medium. This taught me more about:</p>
@@ -130,7 +154,10 @@
 
 <section id="achievements">
   <h1>My Achievements</h1>
-  </section>
+
+  <img src="images/certificate.png" alt="Award" width="100%">
+  <p>My most recent achievement is graduating from university in game development. It was a great time to learn, even if it wound up being challenging at times. I learned a lot of the fundamentals which apply even here, and made many fun projects as shown above.</p>
+</section>
 
   <section id="contact">
     <h1>Contact Me</h1>
@@ -140,13 +167,13 @@
     <p>GitHub: <a href="https://github.com/Soulgypsy" target="_blank">https://github.com/Soulgypsy</a></p>
     <p Or contact me through the form below easily:</p>
       <div class="contact-form">
-    <form action="mailto:jackbates065@gmail.com" method="post" enctype="text/plain">
+    <form name="contact-form" action="mailto:jackbates065@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
       <label for="name">Name:</label><br>
-      <input type="text" id="name" name="Name " required><br>
+      <input type="text" id="name" name="Name "><br>
       <label for="email">Email:</label><br>
-      <input type="email" id="email" name="Email " required><br>
+      <input type="email" id="email" name="Email "><br>
       <label for="message">Message:</label><br>
-      <textarea id="message" rows="4" name="Message " required></textarea><br>
+      <textarea id="message" rows="4" name="Message "></textarea><br>
       <input type="submit" value="Send">
       </form>
     </div>

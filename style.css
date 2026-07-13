@@ -66,6 +66,13 @@ html {
   cursor: pointer;
   box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
 }
+#darkModeButton:hover {
+  background: linear-gradient(to bottom, #2563eb, #4f46e5);
+}
+
+#darkModeButton:active {
+  background: linear-gradient(to bottom, #312c91, #2563eb);
+}
 
 /* dark mode values */
 .dark-mode {
@@ -100,7 +107,22 @@ html {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   max-width: 100%;
   width: 100%;
-  display: inline-block;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  vertical-align: top;
+  margin: 10px auto;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.card-column {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   vertical-align: top;
   margin: 10px auto;
   background: white;
@@ -187,6 +209,14 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background: linear-gradient(to bottom, #2563eb, #4f46e5);
+}
+
+button:active {
+  background: linear-gradient(to bottom, #312c91, #2563eb);
+}
+
 /* for mobile screens */
 @media (max-width: 700px) {
   div {
@@ -204,6 +234,7 @@ button {
   .card {
     max-width: 90%;
     width: 90%;
+    flex-direction: column;
   }
 
   img {

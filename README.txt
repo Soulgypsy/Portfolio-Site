@@ -1,0 +1,1 @@
+This is my portfolio site made by hand, just a way to test my knowledge of HTML, CSS and JavaScript. It's basic, but it does the job.

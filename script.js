@@ -4,37 +4,46 @@ function darkModeFunction() {
 }
 
 function validateForm() {
-  let x = document.forms["contact-form"]["email"].value;
-  if (x == "") {
-    alert("This is not a valid email address!");
-    return false;
-  }
-  if (x.indexOf("@") == -1 || x.indexOf(".") == -1) {
-    alert("This is not a valid email address!");
-    return false;
-  }
-  if (x.indexOf("@") > x.lastIndexOf(".")) {
+   let x = document.forms["contact-form"]["email"].value;
+   let y = document.forms["contact-form"]["name"].value;
+   let z = document.forms["contact-form"]["message"].value;
+   let valid = true;
+   if (x == "") {
       alert("This is not a valid email address!");
-      return false;
+      valid = false;
+   }
+   else if (x.indexOf("@") == -1 || x.indexOf(".") == -1) {
+      alert("This is not a valid email address!");
+      valid = false;
+   }
+   else if (x.indexOf("@") > x.lastIndexOf(".")) {
+      alert("This is not a valid email address!");
+      valid = false;
    } 
 
-   let y = document.forms["contact-form"]["Name"].value;
    if (y == "") {
      alert("Name must be filled out");
-     return false;
+     valid = false;
    }
 
-   let z = document.forms["contact-form"]["Message"].value;
    if (z == "") {
      alert("Message must be filled out");
-     return false;
+     valid = false;
    }
-   if (z.length > 500) {
+   else if (z.length > 500) {
      alert("Message must be less than 500 characters");
-     return false;
+     valid = false;
    }
-   if (z.length < 10) {
+   else if (z.length < 10) {
      alert("Message must be at least 10 characters");
-     return false;
+     valid = false;
+   }
+
+
+   if (valid) {
+     alert("Thank you for your message! I will get back to you as soon as possible.");
+   }
+   else {
+      return false;
    }
 }

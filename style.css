@@ -96,6 +96,11 @@ html {
   background: #1a1f2e;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
+
+.dark-mode .card-column {
+  background: #1a1f2e;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
 .dark-mode .contact-form {
   background: #1a1f2e;
   border: 1px solid #2c2f3a;
